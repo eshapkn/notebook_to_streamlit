@@ -87,7 +87,7 @@ with st.sidebar:
 
   st.header("Costs")
   margin = st.number_input("Profit margin per order ($)", min_value=0.0, value=float(COSTS["margin"]), step=0.5)
-  churn_orders = st.number_input("Estimated churn per late order", min_value=0.0, max_value=1.0, value=float(COSTS["churn_orders"]), step=0.01)
+  churn_orders = st.number_input("Estimated churn per late order", min_value=0.0, value=float(COSTS["churn_orders"]), step=0.01)
   refund = st.number_input("Refund per late order ($)", min_value=0.0, value=float(COSTS["refund"]), step=0.5)
 
 costs = {"margin": margin, "churn_orders": churn_orders, "refund": refund}
